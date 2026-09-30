@@ -83,7 +83,7 @@
         window.history.replaceState({}, "", url.toString());
       }
       document.getElementById("btn-he-subscribe").addEventListener("click", function () {
-        window.location.href = "../he-step2/index.html" + window.location.search;
+        window.dispatchEvent(new CustomEvent("inwi:subscribe"));
       });
     })();
   </script>
